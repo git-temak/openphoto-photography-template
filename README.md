@@ -1,0 +1,1 @@
+# openphoto-photography-template
