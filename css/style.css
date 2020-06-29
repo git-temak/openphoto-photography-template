@@ -2,28 +2,37 @@
 	*
 	{
 		margin: 0;
-		font-family: 'Roboto', sans-serif;
+		font-family: Open Sans, sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
 		line-height: 32px;
 		box-sizing: border-box;
 	}
+/*** END UNIVERSAL SELECTOR ***/
 
 /*** ELEMENT-WIDE STYLING ***/
-	.img
+	nav
 	{
-		width: 100%;
+		background: linear-gradient(270deg, #1D1D1D 47.49%, rgba(29, 29, 29, 0) 98.26%);
 	}
 
-	h3
+	header
 	{
-	    font-size: 1.25rem;
+		background-image: url('img/hero.png');
+		background-repeat: no-repeat;
+	    background-size: cover;
+        background-position: center;
 	}
 
-	i
+	body
 	{
-		font-size: 28px !important;
+		background-color: black;
+	}
+
+	footer
+	{
+		border-top: 3px solid #ff0000;
 	}
 
 	a
@@ -31,136 +40,142 @@
 		color: white;
 	}
 
-	i
+	a:hover
 	{
-		color: black;
+		color: #ff0000;
 	}
 
-	a:hover, i:hover
+	h1, span.red
 	{
-		color: #FE5D26;
+		font-size: 2rem;
+	    line-height: 60px;
 	}
 
-/*** NAVIGATIONAL MENU ***/
-	nav a
-	{
-		font-family: Gilroy-Medium;
-		letter-spacing: 0.03em;
-		font-size: 1.1rem;
-		line-height: 32px;
-	}
-
-/*** HERO SECTION ***/
-	.hero-text
-	{
-	    padding-left: 150px;
-	    font-size: 56px;
-		line-height: 80px;
-		letter-spacing: 0.03em;
-	}
-
-	.hero-btn
-	{
-		border-radius: 0;
-		font-size: 20px;
-		line-height: 32px;
-		letter-spacing: 0.03em;
-		padding: 2% 7%;
-	}
-
-/*** SHOOTS SECTION ***/
-	.short-line
-	{
-		width: 40%;
-	    border: 3px solid #FE5D26;
-	    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-	}
-
-	.long-line
-	{
-		/*width: 90%;*/
-	    border: 3px solid #FE5D26;
-	    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-	}
-
-	.line-name-bar
-	{
-		width: 90%;
-	}
-
-	.name-pill
-	{
-		background: #FE5D26;
-		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-	    width: fit-content;
-	    border-radius: 10px;
-	    position: absolute;
-	    top: 10%;
-	}
-
-	.name-pill2
-	{
-		background: #FE5D26;
-		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-	    width: fit-content;
-	    border-radius: 10px;
-	    position: absolute;
-	    top: 10%;
-        left: 70%;
-	}
-
-/*** SERVICES SECTION ***/
-	.medium-line
-	{
-	    border: 3px solid #FE5D26;
-	    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-	}
-
-	.service-btn
+	h2, h3, h4
 	{
 		font-weight: 500;
-		font-size: 20px;
-		line-height: 32px;
-		letter-spacing: 0.03em;
 	}
+
+	.img
+	{
+		width: 100%;
+	}
+
+	.title-seperator
+	{
+		width: 10%;
+		height: 3px;
+		background-color: #ff0000;
+	}
+
+	button:focus
+	{
+		outline: 1px solid white;
+	}
+/*** END ELEMENT-WIDE STYLING ***/
+
+/*** COLOURS ***/
+	.red
+	{
+		color: #ff0000;
+	}
+
+	.btn-red
+	{
+		background-color: #ff0000;
+	}
+
+	.bg-white
+	{
+		background-color: white;
+	}
+/*** COLOURS ***/
+
+/*** FEATURED WORKS SECTION ***/
+	.grey-box
+	{
+		background: rgba(255, 255, 255, 0.85);
+		border-radius: 20px;
+	}
+
+	@media only screen and (min-width: 1025px)
+	{
+		.box-right
+		{
+		    position: absolute;
+		    top: 10%;
+		    right: 30%;
+		    margin-left: -200px !important;
+		}
+
+		.box-left
+		{
+		    position: absolute;
+		    top: 10%;
+	        left: 40%;
+		    margin-right: -200px !important;
+		    z-index: 2;
+		}
+	}
+
+	.likes-right
+	{
+		position: absolute;
+	    top: 79%;
+	    left: 87%;
+	}
+
+	.likes-left
+	{
+		position: absolute;
+	    top: 79%;
+	    right: 85%;
+	}
+
+	@media only screen and (max-width: 441px)
+	{
+		.likes-right
+		{
+			position: absolute;
+		    top: 68%;
+		    left: 76%;
+		}
+
+		.likes-left
+		{
+			position: absolute;
+		    top: 70%;
+		    right: 75%;
+		}
+	}
+/*** END FEATURED WORKS SECTION ***/
+
+/*** STUDIO AND SESSIONS SECTION ***/
+	.sessions-TOP
+	{
+		border-radius: 10px 10px 0 0;
+	}
+
+	.sessions-bottom
+	{
+		border-radius: 0 0 10px 10px;
+	}
+/*** END STUDIO AND SESSIONS  SECTION ***/
 
 /*** PHOTOGRAPHERS SECTION ***/
-	.photo-title
+	.photograher-box
 	{
-	    font-size: 1.6rem;
+		border-radius: 10px;
 	}
 
-	.polaroid
+	.photograher-image
 	{
-		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+		border-radius: 10px 10px 0 0;
 	}
 
 	.name
 	{
-		font-weight: 300;
-		font-size: 24px;
-		line-height: 32px;
+		font-size: 1.2rem;
+		font-weight: 400;
 	}
-
-/*** FOOTER SECTION ***/
-	.social-icon-box
-	{
-	    border-radius: 0px 10px 0px 0px;
-	    position: absolute;
-	    bottom: 0;
-	    left: 0;
-	    margin-left: -68px;
-	    padding: 10% 20%;
-	}	
-
-/*** COLORS ***/
-	.bg-black
-	{
-		background-color: #1D1D1D;
-	}
-
-
-	.bg-black2
-	{
-		background-color: #181818;
-	}
+/*** END PHOTOGRAPHERS SECTION ***/
