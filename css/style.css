@@ -98,7 +98,8 @@
 		border-radius: 20px;
 	}
 
-	@media only screen and (min-width: 1025px)
+	/*** DESIGN ARRANGEMENT FOR LARGER SCREENS ***/
+	@media only screen and (min-width: 1200px)
 	{
 		.box-right
 		{
@@ -132,6 +133,7 @@
 	    right: 85%;
 	}
 
+	/*** MOBILE REARRANGMENT ***/
 	@media only screen and (max-width: 441px)
 	{
 		.likes-right
