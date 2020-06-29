@@ -150,17 +150,61 @@
 		    right: 75%;
 		}
 	}
+
+	.animate-left
+	{
+	    animation: animateleft 1.2s;
+	}
+
+	.animate-right
+	{
+	    animation: animateright 1.2s;
+	}
 /*** END FEATURED WORKS SECTION ***/
 
 /*** STUDIO AND SESSIONS SECTION ***/
-	.sessions-TOP
+	.img-border-tleft
 	{
-		border-radius: 10px 10px 0 0;
+		border-radius: 10px 0 0 0;
 	}
 
-	.sessions-bottom
+	.img-border-tright
 	{
-		border-radius: 0 0 10px 10px;
+		border-radius: 0 10px 0 0;
+	}
+
+	.img-border-bleft
+	{
+		border-radius: 0 0 0 10px;
+	}
+
+	.img-border-bright
+	{
+		border-radius: 0 0 10px 0;
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 991px)
+	{
+		.studio-align
+		{
+			margin-left: 38% !important;
+		}
+	}
+
+	@media only screen and (min-width: 500px) and (max-width: 767px)
+	{
+		.mob-studio-align
+		{
+			margin-left: 30%;
+		}
+	}
+
+	@media only screen and (min-width: 415px) and (max-width: 499px)
+	{
+		.mob-studio-align
+		{
+			margin-left: 20%;
+		}
 	}
 /*** END STUDIO AND SESSIONS  SECTION ***/
 
